@@ -1,5 +1,5 @@
 # Supply_Chain_SQL_Analytics
-Project Name: Supply Chain Delivery Performance & Supplier Analytics.
+Project Name: Supply Chain Delivery Performance & Supplier Analytics using SQL.
 
 Project Overview: 
 This project focuses on analyzing delivery performance, supplier reliability, and operational bottlenecks within an e-commerce supply chain using MySQL. A multi-table relational dataset was used to simulate real-world logistics and operations challenges faced by supply chain teams. How structured SQL analytics can convert raw transactional data into actionable insights for service level improvement and supplier management has been demostrated. The project is designed to reflect real-world supply chain analytics, combining:
