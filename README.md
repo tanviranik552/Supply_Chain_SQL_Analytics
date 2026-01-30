@@ -1,87 +1,52 @@
 # Supply_Chain_SQL_Analytics
 Project Name: Supply Chain Delivery Performance & Supplier Analytics using SQL.
 
-Project Overview: 
-This project focuses on analyzing delivery performance, supplier reliability, and operational bottlenecks within an e-commerce supply chain using MySQL. A multi-table relational dataset was used to simulate real-world logistics and operations challenges faced by supply chain teams. How structured SQL analytics can convert raw transactional data into actionable insights for service level improvement and supplier management has been demostrated. The project is designed to reflect real-world supply chain analytics, combining:
-•	Relational database design
-•	Advanced SQL querying
-•	Supply chain KPIs
-•	Six Sigma (DMAIC) thinking
+**Problem Statement:**
+In e-commerce and logistics operations, companies handle thousands of orders across multiple suppliers, products, and delivery partners.
+While large volumes of operational data are available, organisations often struggle with limited visibility into delivery performance and service-level failures, inability to identify which suppliers are driving delays, poor understanding of where delays occur in the order-to-delivery process, reactive decision-making instead of proactive performance management
+As a result, businesses face late deliveries and SLA breaches, customer dissatisfaction, higher logistics and expediting costs, ineffective supplier performance management.
+The core business problem is the lack of a structured, data-driven way to monitor, diagnose, and improve delivery performance using existing operational data.
 
-Business Objectives: 
-The analysis focuses on answering the following business questions:
-•	How reliable is the current order fulfilment process?
-•	What percentage of orders are delivered on time?
-•	Which suppliers (sellers) contribute most to delivery delays?
-•	Are delays concentrated among a small number of suppliers (Pareto effect)?
-•	How significant are freight costs relative to product value?
-•	Which product categories generate the highest revenue?
+**Project Objectives:**
+The project aimed to support logistics and supply chain decision-making by:
+-Creating a single source of truth from fragmented operational datasets.
+-Defining measurable KPIs to track delivery service levels.
+-Identifying high-impact suppliers and process bottlenecks.
+-Enabling fact-based operational and supplier improvement actions.
 
-Dataset Description: 
-Source: Olist Brazilian E-commerce Public Dataset (Kaggle)
-Records: 100,000+ orders
-Nature: Real transactional e-commerce data
-The dataset consists of multiple CSV files which were modelled into a normalised relational database.
-The database was designed using a star-like schema, separating fact and dimension tables.
-Core Tables:
-•	customers – customer location information
-•	sellers – supplier (seller) location data
-•	products – product and category details
-•	orders – order timestamps and delivery dates
-•	order items – line-level transaction data (fact table)
-•	payments – payment methods and values
-•	reviews – customer satisfaction scores
-Primary and foreign keys were defined to ensure referential integrity.
+**Solution Approach & Methodology:**
+-Consolidating Operational Data into a Relational Database:
+Multiple raw datasets (orders, order items, suppliers, products, customers, payments) were integrated into a relational MySQL database.
+Business value: Provides end-to-end visibility of the supply chain from order placement to final delivery.
 
-Key Supply Chain KPIs:
-The following KPIs were calculated using SQL:
-Service Level KPIs
-•	On-time delivery percentage
-•	Average delivery lead time (days)
-•	Late delivery rate
-•	Monthly delivery performance trends
+-Measuring Delivery Service Levels:
+SQL queries were developed to calculate on-time delivery rate, average delivery lead time, late delivery trends over time. 
+Business value: Enables monitoring of logistics performance against service-level expectations.
 
-Supplier Performance KPIs:
-•	Total orders per seller
-•	Late delivery percentage per seller
-•	Seller ranking by delay contribution
-•	Pareto (80/20) analysis of delivery delays
-Logistics & Cost KPIs
-•	Freight cost as a percentage of product price
-•	Revenue by product category
+-Identifying Supplier-Driven Delays:
+Delivery performance was analysed at supplier level, highlighting suppliers with consistently high late-delivery rates, a small group of suppliers responsible for a disproportionate share of delays (Pareto 80/20 analysis). 
+Business value:Supports targeted supplier management, corrective actions, or contract reviews.
 
-Analytical Approach:
-Advanced SQL techniques were used throughout the project, including:
-•	Multi-table joins (5+ tables)
-•	Common Table Expressions (CTEs)
-•	Window functions (RANK, cumulative SUM)
-•	Conditional logic (CASE WHEN)
-•	Date-based calculations
-•	Aggregation and ranking logic
-Bulk data loading and indexing were used to optimise performance when working with large datasets.
+-Detecting Operational Bottlenecks:
+By analysing timestamps across the order lifecycle, the project identified stages where delays accumulate, product categories or sellers with longer fulfilment cycles. 
+Business value: Helps operations teams prioritise process improvements in the most critical areas.
 
-Key Insights: 
-•	A significant proportion of delivery delays are caused by a small subset of suppliers, confirming a strong Pareto effect.
-•	Delivery lead time varies significantly by seller and region.
-•	Freight costs account for a higher percentage of product price in certain categories, indicating potential logistics inefficiencies.
-•	Monthly trend analysis shows periods of increased delivery delays, suggesting seasonal or capacity-related constraints.
+-Structuring SQL for Decision Support:
+Queries were organised into reusable SQL scripts focused on service level performance, supplier analytics, bottleneck detection.
+Business value: Creates a scalable analytics framework that can be reused for ongoing performance monitoring.
 
-Six Sigma (DMAIC) Mapping:
-This project aligns with Six Sigma Green Belt principles:
-•	Define: Late deliveries impacting service level performance
-•	Measure: Delivery lead times and on-time delivery rates
-•	Analyse: Supplier-level and category-level delay contribution
-•	Improve: Focus improvement efforts on top delay-causing suppliers
-•	Control: Monitor on-time delivery KPIs and lead time trends
+**What this Project Solved:**
+This project transformed raw operational data into actionable supply chain insights, enabling:
+-Clear measurement of delivery reliability.
+-Data-driven identification of underperforming suppliers.
+-Visibility into root causes of delivery delays.
+-Improved alignment between logistics performance and business objectives.
+**Business Impact:**
+If implemented in a real organisation, this analysis could:
+-Reduce late deliveries and SLA breaches.
+-Improve customer satisfaction.
+-Strengthen supplier performance management.
+-Lower logistics and expediting costs.
+-Enable proactive, KPI-driven decision-making.
 
-Business Recommendations:
-•	Prioritise performance improvement initiatives with the top delay-contributing suppliers.
-•	Introduce supplier-level delivery SLAs and monitoring dashboards.
-•	Investigate logistics and freight cost optimisation for high-cost product categories.
-•	Track service level KPIs monthly to ensure sustained performance improvements.
 
-Tools & Technologies:
-•	Database: MySQL (MySQL Workbench)
-•	Language: SQL
-•	Techniques: Relational modelling, window functions, KPI analysis
-•	Methodology: Six Sigma (DMAIC)
