@@ -41,17 +41,17 @@ Business value: Creates a scalable analytics framework that can be reused for on
 
 **What this Project Solved:**
 This project transformed raw operational data into actionable supply chain insights, enabling:
--Clear measurement of delivery reliability.
--Data-driven identification of underperforming suppliers.
--Visibility into root causes of delivery delays.
--Improved alignment between logistics performance and business objectives.
+- Clear measurement of delivery reliability.
+- Data-driven identification of underperforming suppliers.
+- Visibility into root causes of delivery delays.
+- Improved alignment between logistics performance and business objectives.
 
 **Business Impact:**
 If implemented in a real organisation, this analysis could:
--Reduce late deliveries and SLA breaches.
--Improve customer satisfaction.
--Strengthen supplier performance management.
--Lower logistics and expediting costs.
--Enable proactive, KPI-driven decision-making.
+- Reduce late deliveries and SLA breaches.
+- Improve customer satisfaction.
+- Strengthen supplier performance management.
+- Lower logistics and expediting costs.
+- Enable proactive, KPI-driven decision-making.
 
 
