@@ -1,6 +1,9 @@
 # Supply_Chain_SQL_Analytics
 Project Name: Supply Chain Delivery Performance & Supplier Analytics using SQL.
 
+**Project Overview:**
+This project analyses delivery performance, supplier reliability, and operational bottlenecks in an e-commerce supply chain using SQL, MySQL. The analysis is based on large, real-world transactional datasets and focuses on transforming raw operational data into actionable insights that support logistics and supply chain decision-making.
+
 **Problem Statement:**
 In e-commerce and logistics operations, companies handle thousands of orders across multiple suppliers, products, and delivery partners.
 While large volumes of operational data are available, organisations often struggle with 
@@ -39,12 +42,26 @@ Business value: Helps operations teams prioritise process improvements in the mo
 Queries were organised into reusable SQL scripts focused on service level performance, supplier analytics, bottleneck detection.
 Business value: Creates a scalable analytics framework that can be reused for ongoing performance monitoring.
 
+- Insights generated from this analysis can be used by operations, procurement, and logistics teams to prioritise improvement initiatives, manage supplier performance, and support data-driven decision-making.
+
+**Technical Implementation:**
+
+- Designed a relational MySQL database with multiple interrelated tables.
+- Used joins, aggregations, and date-based calculations** to analyse delivery performance.
+- Structured SQL scripts into reusable query files for KPI reporting and supplier analytics.
+- Applied data validation checks to ensure consistency across transactional datasets.
+
 **What this Project Solved:**
 This project transformed raw operational data into actionable supply chain insights, enabling:
 - Clear measurement of delivery reliability.
 - Data-driven identification of underperforming suppliers.
 - Visibility into root causes of delivery delays.
 - Improved alignment between logistics performance and business objectives.
+
+**Key Insights:**
+- A small number of suppliers were responsible for a disproportionate share of late deliveries, highlighting key supplier performance risks.
+- Delivery delays were concentrated in specific stages of the order-to-delivery lifecycle, indicating operational bottlenecks.
+- Significant variation in delivery performance was observed across suppliers and product categories, suggesting opportunities for targeted process improvements.
 
 **Business Impact:**
 If implemented in a real organisation, this analysis could:
